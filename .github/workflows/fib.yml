@@ -38,7 +38,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            Borokoro/chmury-1
+            borokoro6/chmury-1
             ghcr.io/${{ github.repository }}
           tags: |
             type=ref,event=branch
@@ -55,5 +55,5 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=registry,ref=docker.io/borokoro6/fib:cache
-          cache-to: type=registry,ref=docker.io/borokoro6/fib:cache,mode=max
+          cache-from: type=registry,ref=docker.io/borokoro6/chmury-1:cache
+          cache-to: type=registry,ref=docker.io/borokoro6/chmury-1:cache,mode=max
