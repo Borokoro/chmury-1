@@ -4,14 +4,12 @@ on:
     push:
         branches: [master]
         tags: [v*]
-		
+
 jobs:
     build-push-images:
         name: Budowa i publikacja obrazu fib na rezpozytorium
         runs-on: ubuntu-20.04
-		
-    steps:
-	
+	steps:
         - name: Checkout code
           uses: actions/checkout@v2
 		
