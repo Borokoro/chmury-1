@@ -3,7 +3,7 @@ name: Github Action flow to Docker hub for Fib
 on:
     push:
         branches: [master]
-        tags: 'v*'
+        tags: [v*]
 		
 		
 jobs:
